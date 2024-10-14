@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶大考驗</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>記憶大考驗</h1>
+    
+    <!-- 控制區域 -->
+    <div class="controls">
+        <!-- 顯示時間選單 -->
+        <label for="time-select">顯示時間：</label>
+        <select id="time-select">
+            <option value="5">5 秒</option>
+            <option value="10" selected>10 秒</option>
+            <option value="15">15 秒</option>
+        </select>
+        
+        <!-- 遊戲板大小選單 -->
+        <label for="size-select">遊戲板大小：</label>
+        <select id="size-select">
+            <option value="2">2x2</option>
+            <option value="4" selected>4x4</option>
+            <option value="6">6x6</option>
+        </select>
+    </div>
+    
+    <!-- 按鈕區域 -->
+    <div class="buttons">
+        <button id="start-button">開始遊戲</button>
+        <button id="show-all-button">顯示所有正面</button>
+        <button id="hide-all-button">顯示所有背面</button>
+        <button id="theme-button">切換主題</button>
+        <button id="restart-button">重新開始</button>
+        <button id="toggle-hide-matched-button">隱藏已完成的圖片</button> <!-- 新增的按鈕 -->
+    </div>
+    
+    <div id="game-board" class="game-board"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
